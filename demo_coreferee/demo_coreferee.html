@@ -1,19 +1,115 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Démonstration de coreferee</title>
-  </head>
-  <body>
-    <h1>Démonstration de coreferee</h1>
-    <p>Télécharger les deux fichiers suivants dans un même dossier
-        <ul>
-            <li><a href="./build_mentions.py" download="build_mentions.py">build_mentions.py</a></li>
-            <li><a href="./demonstration_coreferee.ipynb" download="demonstration_coreferee.ipynb">demonstration_coreferee.ipynb</a></li>
-        </ul>
-    </p>
-    <p>Puis installer la bibliothèque dans un nouvel environnement
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Démonstration Coreferee</title>
 
-    </p>
-    <p>Et lancer le notebook</p>
-  </body>
-</html>
+<link rel="stylesheet" type="text/css" href="./css/bluebliss.css">
+<style>
+    code {color:whitesmoke}
+    .terminal{
+           color: white;
+         background-color: black;
+        width: 100%;
+        padding: 2px;
+    display: inline-block;}
+    .terminal-wrapper{
+        display: inline-block;
+        color:white;
+        width: 47%;
+        padding: 3px;
+        border-width: 5px;}
+    .terminal-div{
+        color:white;
+        width: 100%;
+        border:lightblue 1px solid;
+        display: inline-block;
+    }
+    .link {display: none;}
+ </style>
+</head>
+<body>
+<div id="mainContentArea">
+<div id="contentBox">
+<div id="title">Coreferee</div>
+<div id="linkGroup">
+<div class="link"><a href="https://www.html.am/templates/downloads/bryantsmith/BlueBliss/index.html">Home</a></div>
+<div class="link"><a href="https://www.html.am/templates/downloads/bryantsmith/BlueBliss/index.html">About</a></div>
+<div class="link"><a href="https://www.html.am/templates/downloads/bryantsmith/BlueBliss/index.html">Portfolio</a></div>
+<div class="link"><a href="https://www.html.am/templates/downloads/bryantsmith/BlueBliss/index.html">Contact</a></div>
+</div>
+<div id="blueBox">
+<div id="header"></div>
+<div class="contentTitle">Démonstration de Coreferee pour le Français</div>
+<div class="pageContent">
+<p>Les slides de présentation sont ici : 
+<a href="./2022-03-31_coreferee-fr_presentation.pptx" download="coreferee-fr_presentation.pptx"><img src="css/powerpoint-logo-768x768.png" width="5%"></a>
+<a href="./2022-03-31_coreferee-fr_presentation.pdf" download="coreferee-fr_presentation.pdf"><img src="css/PDF-Logo-961x1024.png" width="5%"></a>
+</p>
+<p>Pour suivre la démo, suivre les instructions suivantes :</p>
+<p>
+    <ls>
+        <ul>-Installer la bibliothèque dans un nouvel environnement virtuel</ul>
+        <div class="terminal-div">
+            <div class="terminal-wrapper">
+                <p>Terminal Unix / Mac</p>
+            <div class="terminal" title="Terminal Unix">
+            <code>
+                python3.9 -m venv coreferee-env<br/>
+                source coreferee-env/bin/activate<br/>
+                <br/>
+                python3 -m pip install coreferee<br/>
+                python3 -m spacy download fr_core_news_lg<br/>
+                python3 -m coreferee install fr                
+            </code>
+            </div>
+            </div>
+            <div class="terminal-wrapper">
+                <p>Anaconda Prompt</p>
+            <div class="terminal" title="Anaconda Prompt">
+            <code>
+                conda create –n coreferee-env python=3.9<br/>
+                conda activate coreferee-env<br/>
+                <br/>
+                python -m pip install coreferee<br/>
+                python -m spacy download fr_core_news_lg<br/>
+                python -m coreferee install fr                
+            </code>
+            </div>
+        </div>
+    </div>
+        <ul>- Puis télécharger  
+        <a href="./build_mentions.py" download="build_mentions.py"><img src="css/Python-logo-notext.svg" width="5%"></a> et 
+        <a href="./demonstration_coreferee.ipynb" download="demonstration_coreferee.ipynb"><img src="css/jupyter-logo.svg" width="5%"></a>
+        dans un même dossier 
+    </ul>
+    </ul>
+    <ul>- Et lancer le notebook dans l'environnement</ul>
+        <div class="terminal-div">
+            <div class="terminal-wrapper">
+                <p>Terminal Unix / Mac</p>
+                <div class="terminal" title="Terminal Unix">
+                    <code>
+                        pip install jupyter<br/>
+                        jupyter notebook demonstration_coreferee.ipynb              
+                    </code>
+                </div>
+            </div>
+            <div class="terminal-wrapper">
+                <p>Anaconda Prompt</p>
+                <div class="terminal" title="Anaconda Prompt">
+                    <code>
+                        conda install jupyter notebook<br/>
+                        jupyter notebook demonstration_coreferee.ipynb           
+                    </code>
+                </div>
+            </div>
+        </div>
+    </ls>
+</p></div>
+<div id="footer">30 Mars 2022</div>
+</div>
+</div>
+</div>
+<script defer="" src="./css/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;6f42f2285982049f&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;699048627e364e81b4b0d951dfcc0d1c&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+
+</body></html>
