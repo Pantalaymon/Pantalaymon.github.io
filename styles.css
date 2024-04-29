@@ -56,3 +56,9 @@ a:hover {
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Add rounded corners */
 }
+
+/* Added style for the description */
+.icon-list span {
+    display: block;
+    text-align: center;
+}
