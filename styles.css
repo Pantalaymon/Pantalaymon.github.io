@@ -32,10 +32,27 @@ ul {
 li {
     margin-bottom: 10px;
 }
+
 a {
     color: #007bff;
     text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
+}
+
+.icon-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.icon-list li {
+    margin-right: 20px; /* Adjust spacing between icons */
+}
+
+.icon-list img {
+    width: 100px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
 }
