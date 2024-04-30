@@ -55,8 +55,8 @@ a:hover {
 }
 
 .icon-list img {
-    width: 100px; /* Adjust image width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: auto; 
+    height: 200px; 
     border-radius: 10px; /* Add rounded corners */
 }
 
@@ -66,7 +66,4 @@ a:hover {
     text-align: center;
     padding-top: 5px; /* Adjust vertical spacing between icon and text */
 }
-img {
-    height: 200px; /* Adjust the height as needed */
-    width: auto; /* Maintain aspect ratio */
-}
+
