@@ -41,14 +41,17 @@ a:hover {
     text-decoration: underline;
 }
 
+
 .icon-list {
     display: flex;
     list-style-type: none;
     padding: 0;
+    justify-content: center; /* Align items horizontally */
 }
 
 .icon-list li {
     margin-right: 20px; /* Adjust spacing between icons */
+    text-align: center; /* Center text */
 }
 
 .icon-list img {
@@ -61,4 +64,5 @@ a:hover {
 .icon-list span {
     display: block;
     text-align: center;
+    padding-top: 5px; /* Adjust vertical spacing between icon and text */
 }
