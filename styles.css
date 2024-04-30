@@ -55,10 +55,12 @@ a:hover {
 }
 
 .icon-list img {
-    width: 300px; 
-    height: 200px; 
+    max-width: 100%; /* Limit the maximum width of the images */
+    height: 200px; /* Maintain aspect ratio */
+    object-fit: contain; /* Maintain aspect ratio */
     border-radius: 10px; /* Add rounded corners */
 }
+
 
 /* Added style for the description */
 .icon-list span {
@@ -67,3 +69,13 @@ a:hover {
     padding-top: 5px; /* Adjust vertical spacing between icon and text */
 }
 
+.icon-list img.logo {
+    width: 100px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+}
+.icon-list:first-of-type img {
+    height: 150px; /* Adjust as needed */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+}
