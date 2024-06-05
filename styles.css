@@ -40,42 +40,43 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
-
-.icon-list {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    justify-content: center; /* Align items horizontally */
+.project-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #e9ecef; /* Light background color for placard effect */
+    border: 1px solid #dee2e6; /* Border for table */
+    border-radius: 10px; /* Rounded corners for table */
+    overflow: hidden; /* Ensures borders are properly rounded */
 }
 
-.icon-list li {
-    margin-right: 20px; /* Adjust spacing between icons */
-    text-align: center; /* Center text */
+.project-table .image-row td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #dee2e6; /* Border for table cells */
+    background-color: #ffffff; /* White background for table cells */
+    height: 220px; /* Fixed height for image cells */
 }
 
-.icon-list img {
-    max-width: 100%; /* Limit the maximum width of the images */
-    height: 200px; /* Maintain aspect ratio */
-    object-fit: contain; /* Maintain aspect ratio */
-    border-radius: 10px; /* Add rounded corners */
+.project-table .image-row img {
+    max-width: 100%; /* Ensure images fit within the cell */
+    max-height: 200px; /* Ensure images fit within the cell */
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover the space */
+    border-radius: 10px; /* Adds rounded corners to images */
 }
 
+.project-table .description-row td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #dee2e6; /* Border for table cells */
+    background-color: #ffffff; /* White background for table cells */
+}
 
-/* Added style for the description */
-.icon-list span {
+.project-table .description-row span {
     display: block;
     text-align: center;
-    padding-top: 5px; /* Adjust vertical spacing between icon and text */
-}
-
-.icon-list img.logo {
-    width: 100px; /* Adjust image width as needed */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Add rounded corners */
-}
-.icon-list:first-of-type img {
-    height: 150px; /* Adjust as needed */
-    width: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Add rounded corners */
+    color: #333;
+    background-color: #f8f9fa; /* Light background color for description */
+    padding: 5px; /* Padding for description text */
+    border-radius: 5px; /* Rounded corners for description placard */
 }
