@@ -12,13 +12,19 @@
     </header>
     <div class="container">
         <h2>My Projects</h2>
-        <section>
+        <section class="project-section">
             <h3>Face Attractiveness Ratings</h3>
             <p>Using MEBeauty dataset to analyze and predict facial attractiveness ratings.</p>
             <p>
                 <a href="https://github.com/Pantalaymon/facial-attractiveness-ratings">GitHub Repository</a>
             </p>
             <table class="project-table">
+                <tr class="title-row">
+                    <td><span>Analysing Ratings</span></td>
+                    <td><span>Predicting attractiveness score</span></td>
+                    <td><span>Identifying Facial features</span></td>
+                    <td><span>Generating faces</span></td>
+                </tr>
                 <tr class="image-row">
                     <td>
                         <a href="https://github.com/Pantalaymon/facial-attractiveness-ratings/blob/main/Facial_ratings_analysis.ipynb">
@@ -42,26 +48,23 @@
                     </td>
                 </tr>
                 <tr class="description-row">
-                    <td>
-                        <span>Analysing Facial Ratings</span>
-                    </td>
-                    <td>
-                        <span>Predicting attractiveness score</span>
-                    </td>
-                    <td>
-                        <span>Identifying Facial features associated with Ratings</span>
-                    </td>
-                    <td>
-                        <span>Generating faces from rating</span>
-                    </td>
+                    <td><span>In this notebook we use several statistics and data visualization tools to thoroughly examine the distribution of facial ratings.<br><br>We aim to identify how people rate faces, which variables influence the ratings, and how variable are the scores.</span></td>
+                    <td><span>We train a regression model to predict the attractiveness score of any human face.<br><br>We adjust for the biases in human ratings before leveraging a pretrained convolutional neural network.<br>The resulting model was evaluated on separate data.</span></td>
+                    <td><span>We used the structure of the CNN trained in the previous notebook to isolate human-interpretable features.<br><br>Ongoing Project.</span></td>
+                    <td><span>Training a model to generate artificial images based on the variables in the dataset: ethnicity, gender, and rating.<br><br>Project not started yet.</span></td>
                 </tr>
             </table>
         </section>
 
-        <section>
+        <section class="project-section">
             <h3>Coreference resolution for French</h3>
             <p>Adding support for French to coreferee, coreference resolution library powered by spaCy. Demonstration of the tool and code and resources developed.</p>
             <table class="project-table">
+                <tr class="title-row">
+                    <td><span>Coreferee French : Code</span></td>
+                    <td><span>Coreferee French : Demo</span></td>
+                    <td><span>Neuralcoref French</span></td>
+                </tr>
                 <tr class="image-row">
                     <td>
                         <a href="https://github.com/Pantalaymon/coreferee_french">
@@ -80,30 +83,25 @@
                     </td>
                 </tr>
                 <tr class="description-row">
-                    <td>
-                        <span>Coreferee French : Code</span>
-                    </td>
-                    <td>
-                        <span>Coreferee French : Demo</span>
-                    </td>
-                    <td>
-                        <span>Neuralcoref French</span>
-                    </td>
+                    <td><span>Codebase for coreferee in French.<br>The codebase presents all the files and resources developed to add French to coreferee, a coreference resolution library.<br><br>Feature (linguistics) engineering to help coreference resolution and training of a neural ensemble to decide coreference chains.</span></td>
+                    <td><span>Demonstration of the tool done on March 30, 2022.<br><br>Instructions for using the tool and files used during the demonstration (presentation and notebook).</span></td>
+                    <td><span>Codebase for Neuralcoref in French.<br>Attempt to train the model of spaCy-based coreference resolution library: neuralcoref.<br><br>Inconclusive project done before coreferee French.</span></td>
                 </tr>
             </table>
-            <p>
-                <a href="./demo_coreferee/demo_coreferee.html">Demo</a>
-                <a href="https://github.com/Pantalaymon/coreferee_french">GitHub Repository</a>
-            </p>
         </section>
 
-        <section>
+        <section class="project-section">
             <h3>La Defense Business District in Newspapers</h3>
             <p>Analysis of the perception and representation of the French business district "La Defense" in French and British press. Work done during Master internship.</p>
             <p>
                 <a href="https://github.com/Pantalaymon/La_Defense_En_Perspective_Press_Analysis">Repository</a>
             </p>
             <table class="project-table">
+                <tr class="title-row">
+                    <td><span>Corpus</span></td>
+                    <td><span>Detection of designations (NER)</span></td>
+                    <td><span>Classification of mentions according to typology</span></td>
+                </tr>
                 <tr class="image-row">
                     <td>
                         <a href="https://github.com/Pantalaymon/La_Defense_En_Perspective_Press_Analysis/tree/main/corpus">
@@ -122,15 +120,9 @@
                     </td>
                 </tr>
                 <tr class="description-row">
-                    <td>
-                        <span>Corpus</span>
-                    </td>
-                    <td>
-                        <span>Detection of designations (NER)</span>
-                    </td>
-                    <td>
-                        <span>Classification of mentions according to typology</span>
-                    </td>
+                    <td><span>Dataset of French and British newspapers.<br>Also mentions and typology annotated for model training and analysis.</span></td>
+                    <td><span>Codebase for training of a model to identify mentions of La Defense (Named Entity Recognition).</span></td>
+                    <td><span>Codebase for training of a model to assign the identified mentions of La Defense to their class with respect to the typology developed for perception analysis.</span></td>
                 </tr>
             </table>
         </section>
